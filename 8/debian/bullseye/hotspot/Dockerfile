@@ -8,8 +8,8 @@ RUN apt-get update && \
 
 ENV LANG C.UTF-8
 
-ARG TARGETARCH
-ARG COMMIT_SHA
+ARG TARGETARCH=arm64
+ARG COMMIT_SHA=a6254c986b60f27ecb2201dd3a66b22fcc724dc6
 ARG GIT_LFS_VERSION=3.0.2
 
 # required for multi-arch support, revert to package cloud after:
